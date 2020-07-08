@@ -1,0 +1,23 @@
+# This app checks whether a number is prime or not?
+while 1:
+    a = int(input("Enter your number: "))
+  # The smallest prime is 2
+
+    if a > 1:
+        # check for factors
+        for i in range(2, a):
+            if (a % i) == 0:
+                print(a, "is a composite number")
+                print(i, "times", a // i, "is", a)
+                break
+        else:
+            print(a, "is a prime number")
+
+    # if input number is less than
+    # or equal to 1, it is not prime
+    elif a =="" :
+        print("Please enter a number")
+    elif a < 2:
+        print("Prime numbers can not be less than 2")
+    else:
+        print("Thank you for using my app. See you soon.")
